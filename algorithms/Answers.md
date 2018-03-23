@@ -13,11 +13,12 @@ g) O(n)
 Algorithms
 
 * a) Time Complexity O(n). Space Complexity O(1)
-    1) The max difference will be between minimum element in the arr and max element in the array. So we just need to find min and max in the array.
-    2) Define two integer pointers min and max. Set min and max to arr[0]
-    3) Iterate through the array and set min to array[index] if array[index] < min.
-    For max check and set if array[index] > max.
-    4) return (max-min)
+    //I did not consider that i less than j initially. Below is slight modification
+    1) The max difference will be between minimum element in the arr and max element in the array. So we just need to find min and max in the array such that I<J
+    2) Define three integer pointers min, max, lastMin. Set min, max, lastMin to 0;
+    3) Iterate through the array and set lastmin to index if array[index] < array[lastmin].
+    4) For max check it will be a bit complicated.When we find an element that is greater than array[max] then not only we have to set max equal to current max, but also move the min pointer tp lastmin pointer
+    4) return (arr[max]-arr[min])
 
 * b) Do a binary search on n story building 
     Time Complexity O(logn). Space Complexity O(1)
