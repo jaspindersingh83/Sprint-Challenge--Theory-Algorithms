@@ -1,8 +1,8 @@
 * Exercise 1
 a) O(n)
-b) Infinite loop for worst case
+b) Infinite loop for worst case.
 c) O(sqrt n)
-d) O(n2)
+d) O(nlogn)
 e) O(n3)
 f) O(n)
 g) O(n)
